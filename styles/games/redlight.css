@@ -1,0 +1,63 @@
+@import url("../main.css");
+
+.game-container {
+  text-align: center;
+}
+
+.game-area {
+  width: 90%;
+  max-width: 900px;
+  height: 260px;
+  margin: 40px auto;
+  background: var(--glass);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+#player {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  width: 120px;
+  transition: transform 0.2s ease;
+}
+
+#finish-line {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 10px;
+  height: 100%;
+  background: red;
+  border-radius: 4px;
+}
+
+.game-btn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.game-status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.red {
+  color: #ff4d4d;
+}
+
+.green {
+  color: #4dff62;
+}
+
+@media (max-width: 550px) {
+  #player { width: 90px; }
+  .game-area { height: 210px; }
+}
+
+

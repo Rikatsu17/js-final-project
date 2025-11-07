@@ -1,0 +1,88 @@
+@import url("main.css");
+
+
+tbody tr {
+  transition: 0.3s;
+}
+
+tbody tr:hover {
+  background: rgba(255,255,255,0.1);
+  transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; translate: 0 6px; }
+  to { opacity: 1; translate: 0; }
+}
+.back-btn {
+  margin-bottom: 20px;
+  padding: 10px 14px;
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  color: var(--accent);
+  cursor: pointer;
+  transition: .25s;
+}
+
+.back-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.card {
+  background: var(--glass);
+  padding: 22px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.primary {
+  background: var(--accent);
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;  
+}
+.primary:hover{
+  background: rgb(0, 204, 255);
+  padding:11px;
+}
+.primary:active {
+  padding: 9px;
+}
+.danger {
+  background: #ff4a4a;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.danger:hover {
+  padding:11px;
+  background:rgb(255, 0, 0);
+}
+.danger:active{
+  padding:9px;
+}
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  padding: 6px 0;
+}
