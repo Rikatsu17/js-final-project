@@ -13,7 +13,6 @@ if (authArea) {
   }
 }
 
-// Копируем массив вопросов и перемешиваем, чтобы не повторялись
 function shuffle(array) {
   return array.sort(() => Math.random() - 0.5);
 }
@@ -206,3 +205,4 @@ function saveScore() {
 
 // Стартуем первый вопрос
 startQuestion();
+
