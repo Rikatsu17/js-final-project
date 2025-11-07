@@ -1,4 +1,4 @@
-@import url("main.css");
+@import url("index.css");
 
 
 tbody tr {
@@ -86,3 +86,4 @@ textarea {
 .achievements li {
   padding: 6px 0;
 }
+
