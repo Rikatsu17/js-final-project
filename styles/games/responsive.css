@@ -1,0 +1,86 @@
+/* ✅ Общие правила — чтобы контент не выходил за экран */
+.main-content {
+  padding-top: 90px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* ✅ phone: width <= 480px */
+@media (max-width: 480px) {
+
+  /* NAVBAR */
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  /* BUTTONS */
+  button, .btn {
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
+  }
+
+  /* --- 🎮 Red Light — Green Light --- */
+  .game-area {
+    width: 90vw !important;
+    height: 260px !important;
+  }
+
+  #player {
+    width: 70px !important;
+  }
+
+  #finish-line {
+    width: 6px !important;
+  }
+
+  /* --- 🎯 Reaction Game --- */
+  #gameArea {
+    width: 90vw !important;
+    height: 300px !important;
+  }
+
+  .ball {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .game-info h3 {
+    font-size: 1.1rem !important;
+  }
+
+  /* --- 🎮 Guess the Anime --- */
+  .quiz-container {
+    padding: 10px;
+  }
+
+  .quiz-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .answers {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .answer-btn {
+    font-size: 1rem !important;
+    padding: 12px !important;
+  }
+}
+
+/* ✅ tablets */
+@media (min-width: 481px) and (max-width: 900px) {
+  .answers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #gameArea {
+    height: 380px;
+  }
+}
