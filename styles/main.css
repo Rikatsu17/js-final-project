@@ -147,7 +147,7 @@ body.theme-dark .art-desc{ color: rgba(255,255,255,0.75); }
 .card-hover:hover,
 .card-hover:focus{
   transform: translateY(-10px) scale(1.01);
-  box-shadow: 0 18px 40px #2BC3FF;
+  box-shadow: 0 18px 40px rgba(11,8,30,0.16);
 }
 .card-hover:hover .art-media,
 .card-hover:focus .art-media{
@@ -212,6 +212,7 @@ body.theme-dark #quote-box {
   border-radius: 15px;
   padding: 20px;
   width: 70%;
+  box-shadow: 0 0 10px #2BC3FF;
 }
 
 #quote {
@@ -232,4 +233,16 @@ body.theme-dark #quote-box {
 
 #new-quote:hover {
   background: #2BC3FF;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%232BC3FF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+body.theme-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
