@@ -9,4 +9,40 @@
 
 <h2><b>What We Used</b></h2>
 
-<p>HTML, CSS, JS, JQUERY, BOOTSTRAP and etc.</p>
+<ul>
+  <li>HTML</li>
+  <li>JS</li>
+  <li>CSS</li>
+  <li>JQUERY</li>
+  <li>BOOTSTRAP/li>
+  <li>API Integration</li>
+</ul>
+
+<h2><b>List of files</b></h2>
+
+📂 Project Structure
+This project is a collection of web-based games and their supporting code.
+
+.<br>
+├── games/<br>
+│   ├── guess.html<br>
+│   ├── reaction.html<br>
+│   └── redlight.html<br>
+├── material/<br>
+├── scripts/<br>
+│   ├── games/<br>
+│   ├── about.js<br>
+│   ├── main.js<br>
+│   ├── profile.js<br>
+│   ├── quote.js<br>
+│   └── scoreboard.js<br>
+├── styles/<br>
+├── README.md<br>
+├── about.html<br>
+├── games.zip<br>
+├── index.html<br>
+├── login.html<br>
+├── profile.html<br>
+├── register.html<br>
+└── scoreboard.html<br>
+
