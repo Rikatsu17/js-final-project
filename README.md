@@ -9,4 +9,14 @@
 
 <h2><b>What We Used</b></h2>
 
-<p>HTML, CSS, JS, JQUERY, BOOTSTRAP and etc.</p>
+<ul>
+  <li>HTML</li>
+  <li>JS</li>
+  <li>CSS</li>
+  <li>JQUERY</li>
+  <li>BOOTSTRAP/li>
+  <li>API Integration</li>
+</ul>
+
+<h2><b>List of files</b></h2>
+
