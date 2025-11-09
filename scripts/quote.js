@@ -1,13 +1,11 @@
-const proxy = "https://api.allorigins.win/raw?url=";
-const url = "https://api.quotable.io/random";
-
 async function getQuote() {
   try {
-    const response = await fetch(proxy + url);
+    const response = await fetch("https://api.adviceslip.com/advice");
     const data = await response.json();
-    document.getElementById("quote").textContent = `"${data.content}" — ${data.author}`;
+    document.getElementById("quote").textContent = `"${data.slip.advice}" — AdviceBot 🤖`;
   } catch (error) {
-    document.getElementById("quote").textContent = "⚠️ Failed to load quote!";
+    document.getElementById("quote").textContent = "⚠️ Failed to load advice!";
   }
 }
 getQuote();
+document.getElementById("new-quote").addEventListener("click", getQuote);
