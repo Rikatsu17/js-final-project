@@ -170,8 +170,6 @@ body.theme-dark .art-desc{ color: rgba(255,255,255,0.75); }
   transform: rotate(20deg);
   transition: left 700ms cubic-bezier(.2,.9,.3,1);
   pointer-events: none;
-  box-shadow: 0 0 10px #2BC3FF;
-  border: 2px solid #2BC3FF;
 }
 .card-hover:hover::after,
 .card-hover:focus::after{ left: 120%; }
