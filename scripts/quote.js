@@ -1,19 +1,22 @@
-async function getQuote() {
-  try {
-    const response = await fetch("https://api.allorigins.win/raw?url=https://api.adviceslip.com/advice");
-    const data = await response.json();
-    document.getElementById("quote").textContent = `"${data.slip.advice}" — AdviceBot 🤖`;
-  } catch (error) {
-    console.error("Error fetching advice:", error);
-    document.getElementById("quote").textContent = "⚠️ Failed to load advice!";
-  }
-}
-
-getQuote();
-
 document.addEventListener("DOMContentLoaded", () => {
+  const quoteEl = document.getElementById("quote");
   const newQuoteBtn = document.getElementById("new-quote");
-  if (newQuoteBtn) {
-    newQuoteBtn.addEventListener("click", getQuote);
+
+  async function getQuote() {
+    try {
+      const response = await fetch("https://api.allorigins.win/raw?url=https://api.adviceslip.com/advice");
+      const data = await response.json();
+      quoteEl.textContent = `"${data.slip.advice}" — AdviceBot 🤖`;
+    } catch (error) {
+      console.error("Error fetching advice:", error);
+      quoteEl.textContent = "⚠️ Failed to load advice!";
+    }
   }
+
+  getQuote();
+
+  newQuoteBtn.addEventListener("click", () => {
+    quoteEl.textContent = "Loading...";
+    getQuote();
+  });
 });
