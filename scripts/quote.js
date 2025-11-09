@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function getQuote() {
     try {
-      const response = await fetch("https://api.allorigins.win/raw?url=https://api.adviceslip.com/advice");
+      const timestamp = Date.now();
+      const response = await fetch(`https://api.allorigins.win/raw?url=https://api.adviceslip.com/advice?t=${timestamp}`);
       const data = await response.json();
       quoteEl.textContent = `"${data.slip.advice}" — AdviceBot 🤖`;
     } catch (error) {
